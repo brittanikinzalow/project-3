@@ -1,0 +1,191 @@
+/* universal style */
+
+* {
+    box-sizing: border-box;
+}
+
+/* body and content  */
+
+body {
+    margin: 0;
+    font-family: 'Caveat', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    background-color: rgba(45,57,69,1);
+    padding: 1em 0 1em;
+    font-weight: 500;
+    font-size: large;
+    width: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    color: #babec2;
+    font-size: 20px;
+}
+
+fieldset {
+    border: none;
+    display: flex;
+    width: 100%;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-block-start: 0;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-block-end: 0;
+}
+
+legend {
+    font-size: x-large;
+    font-weight: 700;
+    padding-top: 1.2em;
+    padding-inline-start: 0;
+    padding-inline-end: 0;
+    padding-bottom: 1.2em;
+}
+
+label {
+    color: #babec2;
+}
+
+ul {
+    list-style: none;
+    padding-inline-start: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    width: 100%;
+    margin: auto;
+}
+
+.double-underline {
+    border-bottom: 4px solid #46698b;
+    width: 95%;
+    margin: auto;
+    max-width: 1024px;
+}
+
+
+/* Contact section of the page  */
+
+.container {
+    border-top: 2px solid #46698b;
+    margin: 3px auto;
+    width: 95%;
+    max-width: 1024px;
+}
+
+.contact li:last-child {
+    width: 50%;
+}
+
+.contact li > input, select {
+    background-color: #eff0f1;
+    border-radius: .2em;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: #babec2;
+    margin-bottom: 2em;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+
+textarea {
+    background-color: #eff0f1;
+    border: none;
+    border-radius: .2em;
+    width: 100%;
+    color: #babec2;
+}
+
+textarea:focus {
+    border: solid #46698b .3em;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    border: solid #46698b .3em;
+    outline: none;
+}
+
+ select {
+    color: #babec2;
+    width: 100%;
+    appearance: none;
+ }
+
+
+::placeholder {
+    text-align: right;
+    color: #babec2;
+    /* padding-right: 1em; */
+}
+
+button {
+    border: none;
+    color: white;
+    background-color: #4ebbb5;
+    padding: .8em;
+    width: 100%;
+    border-radius: .2em;
+    font-size: x-large;
+}
+
+/* Newsletter section second half of the page  */
+
+
+.newsletter li {
+    list-style: none;
+    display: flex;
+    color: #babec2;
+    padding: .5em 0 .5em;
+}
+
+.border {
+    border-top: 2px solid #46698b;
+}
+
+.newsletter label:nth-child(3n+1) {
+    padding: 1em 0 1em;
+}
+
+.news {
+    padding-bottom: 8px;
+    padding-top: 1em;
+}
+
+/* media query section  */
+
+@media only screen and (min-width: 768px) {
+    .contact > li {
+        display: flex;
+    }
+    .contact > li > label {
+        width: 25%;
+    }
+    .contact >  li > input,
+    .contact > li > select {
+        width: 75%;
+    }
+    .contact li:last-child {
+        width: 100%;
+    }
+    #zip {
+        width: 25%;
+    }
+    
+}
