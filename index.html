@@ -29,7 +29,7 @@
                         </li>
                         <li>
                             <label for="email">Email Address</label>
-                            <input type="text" name="user_email" id="email" placeholder="Required" Required>
+                            <input type="email" name="user_email" id="email" placeholder="Required" Required>
                         </li>
                         <li>
                             <label for="phone">Phone Number</label>
@@ -46,7 +46,7 @@
 
                         <li>
                             <label for="state">State</label>
-                                <select id="state">
+                                <select id="state" name="user_state">
                                     <option value="" disabled selected hidden>Choose State</option>
                                     <option value="AL">Alabama</option>
                                     <option value="AK">Alaska</option>
@@ -146,7 +146,7 @@
                             <textarea name="user_comments" id="comments" cols="41" rows="5"></textarea>
                         </li>
                         <li>
-                            <button type="button">Sign Up</button>
+                            <input type="submit" value="Sign Up">
                         </li>
 
                     </ul>

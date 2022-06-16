@@ -135,7 +135,7 @@ select:focus {
     /* padding-right: 1em; */
 }
 
-button {
+input[type="submit"]{
     border: none;
     color: white;
     background-color: #4ebbb5;
@@ -173,6 +173,7 @@ button {
 @media only screen and (min-width: 768px) {
     .contact > li {
         display: flex;
+        align-items: center;
     }
     .contact > li > label {
         width: 25%;
